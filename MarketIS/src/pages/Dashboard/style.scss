@@ -1,0 +1,46 @@
+div.dashboard-container {
+  display: grid;
+  margin-top: 20px;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+          "total-earn today-earn today-bought today-sold"
+          "total-bought total-bought total-sold total-sold"
+          "line-buys line-buys line-sales line-sales"
+          "line-earn line-earn line-earn line-earn";
+
+  .area-total-earn {
+    grid-area: total-earn;
+  }
+  .area-total-sold {
+    grid-area: total-sold;
+  }
+  .area-total-bought {
+    grid-area: total-bought;
+  }
+  .area-today-earn {
+    grid-area: today-earn;
+  }
+  .area-today-bought {
+    grid-area: today-bought;
+  }
+  .area-today-sold {
+    grid-area: today-sold;
+  }
+  .area-line-sales {
+    grid-area: line-sales;
+  }
+  .area-line-buys {
+    grid-area: line-buys;
+  }
+  .area-line-earn {
+    grid-area: line-earn;
+  }
+
+  .dashboard-container-graph {
+    box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e0f3ff;
+  }
+}
